@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: #fffff;
+    background-color: #ffffff;
 }
 
 :root {
@@ -198,15 +198,27 @@ body{
 	color: var(--grigio);
 }
 
+.left{
+    width: 50%;
+}
 .left h1{
     font-size: 50px;
     padding: 2rem;
+    font-style: italic;
 }
 .left p{
-    width: 50%;
     font-size: 20px;
     text-align: left;
     padding: 2rem;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.right img{
+    height: 100%;
 }
 
 
@@ -378,6 +390,21 @@ body{
     .navbar-links.collapse {
         display: none;
     }
+
+    .service{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .left{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .right img{
+        height: 300px;
+    }
+}
 
 
 /* Animations */
